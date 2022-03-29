@@ -12,4 +12,16 @@ public class LinkedList<T> {
             this.next = null;
         }
     }
+    /*
+     * This is the method to add first element
+     */
+    public void addFirst(T data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        newNode.next = head;
+        head = newNode;
+    }
 }
