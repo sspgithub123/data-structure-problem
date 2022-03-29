@@ -54,4 +54,15 @@ public class LinkedList<T> {
         }
         System.out.println("null");                         // print the null
     }
+    /*
+     * This is the method to delete first element
+     */
+    public void deleteFirst() {
+        if
+        (head == null) {
+            System.out.println("The list is empty");
+            return;
+        }
+        head = head.next;
+    }
 }
